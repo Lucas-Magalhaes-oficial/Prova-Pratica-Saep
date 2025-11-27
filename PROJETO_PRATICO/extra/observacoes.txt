@@ -1,0 +1,6 @@
+REMOVER A SENHA "ROOT" NO ARQUIVO DE CONEXÃO QUANDO ESTIVER NO SENAI, SE NÃO O BANCO NÃO ABRE
+
+é a linha 21:
+$pass = 'root';
+
+remover esse root.

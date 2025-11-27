@@ -1,0 +1,219 @@
+/* === Reset simples === */
+* { box-sizing: border-box; }
+html,body { height: 100%; }
+
+/* === Layout geral === */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #e6f7da 0%, #d0f0b0 100%);
+  margin: 0;
+  padding: 30px 12px;
+  color: #222;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Aplicação centralizada */
+.app-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* === Painel / Menu principal (index.php) === */
+.painel {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  text-align: center;
+  margin: 24px auto;
+}
+
+.titulo {
+  margin: 0 0 18px 0;
+  color: #07314f;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+/* menu de links - estilo de botões */
+.menu-links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(10,10,10,0.08);
+  transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+}
+
+.botao:active { transform: translateY(1px); }
+
+.botao-primario { background: linear-gradient(180deg,#0077ff,#005ec7); }
+.botao-primario:hover { filter: brightness(.95); }
+
+.botao-secundario { background: linear-gradient(180deg,#2ecc71,#25a15a); }
+.botao-secundario:hover { filter: brightness(.95); }
+
+.botao-danger { background: linear-gradient(180deg,#e74c3c,#c0392b); }
+.botao-danger:hover { filter: brightness(.95); }
+
+/* === Login / Form containers === */
+.saudacao {
+  text-align: center;
+  font-size: 28px;
+  color: #082033;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 460px;
+  margin: 12px auto 36px;
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+}
+
+/* Forms gerais */
+form {
+  margin-top: 8px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d0d7db;
+  margin: 10px 0;
+  font-size: 15px;
+  background: #fbfbfb;
+}
+
+input[readonly] {
+  background: #f2f4f6;
+  color: #6a6f73;
+}
+
+/* Botão primário de formulários */
+button[type="submit"],
+button {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(180deg,#1cbd07,#139a04);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 6px;
+  width: auto;
+}
+button[type="submit"]:hover { filter: brightness(.95); }
+
+/* Mensagem de erro genérica */
+.erro {
+  color: #b71c1c;
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Link sair específico */
+a.sair {
+  color: #ffb4b4;
+}
+
+/* === Cadastro / Tabela / Estoque === */
+.container-prod, .container-estoque {
+  max-width: 990px;
+  margin: 22px auto;
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+}
+
+/* Mensagens feedback */
+.msg {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-align: center;
+}
+.msg.sucesso { background:#e6f7ea; color:#125c30; border:1px solid #bfe6c8; }
+.msg.erro { background:#fde7e7; color:#8f1a1a; border:1px solid #f0bcbc; }
+.msg.alerta { background:#fff7df; color:#7a5a05; border:1px solid #fae7b4; }
+
+/* boxes auxiliares */
+.busca-box {
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-bottom:14px;
+}
+.busca-box input { flex:1; }
+.busca-box button { width: auto; }
+
+/* Tabela estilizada */
+.table-box {
+  overflow-x:auto;
+  margin-bottom: 18px;
+}
+
+table {
+  width:100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 700px;
+}
+
+th {
+  background: linear-gradient(180deg,#2b3a4a,#212a34);
+  color: #fff;
+  padding: 10px 8px;
+  text-align: left;
+  font-weight: 700;
+}
+
+td {
+  background: #fff;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+tr:nth-child(even) td { background: #fbfcfe; }
+
+/* Ações (ícones) */
+.acoes { text-align: center; }
+.acoes a { margin: 0 6px; text-decoration:none; font-size:18px; display:inline-block; }
+.acoes a:hover { transform: scale(1.15); }
+
+/* Horz rule */
+hr { border: none; border-top: 1px solid #e6e6e6; margin: 18px 0; }
+
+/* Link voltar */
+.voltar { display:inline-block; margin-top:12px; color:#0044dd; text-decoration:none; font-weight:700; }
+
+/* Responsivo */
+@media (max-width:720px) {
+  .menu-links { flex-direction: column; gap: 10px; }
+  .container, .container-prod, .container-estoque { padding:16px; margin:16px; }
+  table { min-width: 500px; font-size:13px; }
+}
