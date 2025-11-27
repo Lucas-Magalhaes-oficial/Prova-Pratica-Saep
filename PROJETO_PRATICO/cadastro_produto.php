@@ -126,8 +126,8 @@ if (isset($_GET['editar'])) {
               <td><?= htmlspecialchars($p['categoria']) ?></td>
               <td><?= $p['quantidade_atual'] ?></td>
               <td class="acoes">
-                <a href="?editar=<?= $p['id_produto'] ?>">✏️</a>
-                <a href="?excluir=<?= $p['id_produto'] ?>" onclick="return confirm('Deseja realmente excluir este produto?')">🗑️</a>
+                <a href="?editar=<?= $p['id_produto'] ?>">🖋️</a>
+                <a href="?excluir=<?= $p['id_produto'] ?>" onclick="return confirm('Deseja realmente excluir este produto?')">❌</a>
               </td>
             </tr>
           <?php endwhile; ?>
@@ -157,10 +157,18 @@ if (isset($_GET['editar'])) {
              <?= $produtoEdit['id_produto'] ? 'readonly' : '' ?>
              required>
 
-      <button type="submit" name="salvar">Salvar</button>
+
+
+             <center>
+    <button type="submit" name="salvar">Salvar</button>
+</center>
+
+      
     </form>
 
-    <a class="voltar" href="index.php">⬅ Voltar ao menu principal</a>
+    <div class="voltar-container">
+    <a href="index.php" class="btn-voltar">Voltar</a>
+</div>
   </div>
 </div>
 </body>

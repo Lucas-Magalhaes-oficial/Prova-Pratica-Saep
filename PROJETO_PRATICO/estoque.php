@@ -152,8 +152,9 @@ $historico = $conn->query("
       </table>
     </div>
 
-    <a class="voltar" href="index.php">⬅ Voltar ao menu principal</a>
-  </div>
+    <div class="voltar-estoque">
+    <a href="index.php" class="btn-voltar">Voltar</a>
+</div>
 </div>
 </body>
 </html>

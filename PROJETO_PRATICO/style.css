@@ -209,7 +209,77 @@ tr:nth-child(even) td { background: #fbfcfe; }
 hr { border: none; border-top: 1px solid #e6e6e6; margin: 18px 0; }
 
 /* Link voltar */
-.voltar { display:inline-block; margin-top:12px; color:#0044dd; text-decoration:none; font-weight:700; }
+.voltar {
+	 display:inline-block; 
+
+	 margin-top:12px; 
+
+	 color:#0044dd; 
+
+	 text-decoration:none; 
+	 font-weight:700; 
+	
+	 text-align: center;
+	}
+
+	.voltar-estoque {
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+	
+	.btn-voltar {
+		display: inline-block;
+		padding: 10px 25px;
+		background: #e63946;
+		color: #fff;
+		border-radius: 10px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: 0.3s;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	}
+	
+	.btn-voltar:hover {
+		background: #d62828;
+		transform: scale(1.05);
+	}
+
+	.voltar-container {
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+	
+	.btn-voltar {
+		display: inline-block;
+		padding: 10px 25px;
+		background: #e63946;
+		color: #fff;
+		border-radius: 10px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: 0.3s;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	}
+	
+	.btn-voltar:hover {
+		background: #d62828;
+		transform: scale(1.05);
+	}
+
+	.salvar-container {
+		text-align: center;
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+	.salvar-container button {
+		width: auto; /* evita botão gigante */
+		padding: 12px 30px;
+	}
+	
+	
 
 /* Responsivo */
 @media (max-width:720px) {

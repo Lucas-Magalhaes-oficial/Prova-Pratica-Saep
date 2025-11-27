@@ -23,11 +23,11 @@ CREATE TABLE usuarios (
 
 -- Usuários iniciais
 INSERT INTO usuarios (nome, email, senha) VALUES
-('Administrador', 'admin@serjao.com', MD5('12345')),
-('João Silva', 'joao@serjao.com', MD5('12345')),
-('Maria Souza', 'maria@serjao.com', MD5('12345')),
-('Aluno', 'aluno@serjao.com', MD5('123')),
-('Sergio Luiz', 'sergio@serjao.com', MD5('123'));
+('Administrador', 'admin@lucas.com', MD5('12345')),
+('Lucas Magalhaes', 'lucas@lucas.com', MD5('12345')),
+('Maria Joana', 'joana@joana', MD5('12345')),
+('Primo', 'primo@luvas.com', MD5('123')),
+('João', 'sergio@serjao.com', MD5('123'));
 
 -- ================================================
 -- TABELA DE PRODUTOS
